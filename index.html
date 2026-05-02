@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>CV Portfolio</title>
+<title>Sourob Md | CV Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -10,82 +10,140 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #e5e7eb;
+  background: linear-gradient(135deg, #e0f2fe, #fce7f3);
 }
 
 /* HEADER */
 .header {
-  background: #5c6b73;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .header img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 5px solid white;
   margin-top: 10px;
+  object-fit: cover;
 }
 
+/* CONTAINER */
 .container {
   display: flex;
+  padding: 25px;
+  gap: 20px;
+}
+
+/* LEFT + RIGHT */
+.left, .right {
   padding: 20px;
 }
 
-/* LEFT */
 .left {
   width: 40%;
-  padding: 20px;
 }
 
 .right {
   width: 60%;
-  padding: 20px;
 }
 
+/* CARD */
 .card {
+  background: white;
+  padding: 20px;
   margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADINGS */
 h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px;
+  border-left: 5px solid #6366f1;
+  padding-left: 10px;
+  color: #111827;
 }
 
-/* SKILL BAR */
+/* SKILLS */
 .skill {
   margin: 10px 0;
 }
 
 .bar {
-  background: #ccc;
+  background: #e5e7eb;
   height: 8px;
   border-radius: 5px;
 }
 
 .fill {
   height: 8px;
-  background: #333;
+  background: linear-gradient(90deg, #6366f1, #06b6d4);
   border-radius: 5px;
 }
 
 /* TIMELINE */
 .timeline {
-  border-left: 2px solid #333;
+  border-left: 3px solid #6366f1;
   padding-left: 15px;
 }
 
-.timeline div {
-  margin-bottom: 15px;
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #06b6d4;
+  border-radius: 50%;
+  position: absolute;
+  left: -21px;
+  top: 5px;
+}
+
+/* EXPERIENCE */
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.company {
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.date {
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+  color: #374151;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   padding: 15px;
-  background: #5c6b73;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
   color: white;
 }
 </style>
@@ -94,12 +152,14 @@ h2 {
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
   <h1>Sourob Md</h1>
-  <p>Web Developer, Automation Expert, Research Enthusiast</p>
-  <img src="sourob.jpeg">
+  <p>Web Developer | Automation Expert | Research Enthusiast</p>
+  <img src="sourob.jpeg" alt="Profile Picture">
 </div>
 
+<!-- MAIN -->
 <div class="container">
 
   <!-- LEFT SIDE -->
@@ -107,38 +167,38 @@ h2 {
 
     <div class="card">
       <h2>About Me</h2>
-      <p>I am a passionate and detail-oriented Web Developer, Automation Expert, and Research Enthusiast with a strong interest in building efficient, user-friendly digital solutions. I specialize in developing responsive web applications and creating smart automation systems that streamline workflows and improve productivity.
+      <p>
+        I am a passionate and detail-oriented Web Developer, Automation Expert, and Research Enthusiast with a strong interest in building efficient, user-friendly digital solutions. I specialize in developing responsive web applications and creating smart automation systems that streamline workflows and improve productivity.
 
-With hands-on experience in modern web technologies and automation tools, I enjoy solving real-world problems through innovative approaches. My curiosity drives me toward research, particularly in areas like data analysis and emerging technologies, where I continuously explore new ideas and methodologies.
-
-I am committed to continuous learning, adapting to new challenges, and delivering high-quality results in both individual and team environments.</p>
+        With hands-on experience in modern web technologies and automation tools, I enjoy solving real-world problems through innovative approaches. My curiosity drives me toward research, particularly in areas like data analysis and emerging technologies.
+      </p>
     </div>
 
     <div class="card">
       <h2>Skills</h2>
 
       <div class="skill">HTML
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
       </div>
 
       <div class="skill">CSS
-        <div class="bar"><div class="fill" style="width:75%"></div></div>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
       </div>
 
       <div class="skill">Flutter
-        <div class="bar"><div class="fill" style="width:70%"></div></div>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
       </div>
 
       <div class="skill">Python
-        <div class="bar"><div class="fill" style="width:65%"></div></div>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
       </div>
 
     </div>
 
     <div class="card">
       <h2>Awards</h2>
-      <p>Best Student Developer 2025</p>
-      <p>Hackathon Participant</p>
+      <p>🏆 Best Student Developer 2025</p>
+      <p>⚡ Hackathon Participant</p>
     </div>
 
   </div>
@@ -146,72 +206,74 @@ I am committed to continuous learning, adapting to new challenges, and deliverin
   <!-- RIGHT SIDE -->
   <div class="right">
 
-    <<div class="card">
-  <h2>🎓 Education</h2>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>BSc in Computer Science & Engineering</h3>
-        <p class="institution">Leading University</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>Higher Secondary Certificate (HSC)</h3>
-        <p>GPA: 5.00 / 5.00</p>
-        <p>Bangladesh Air Force Shaheen College, Shamshernagar</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+    <!-- EDUCATION -->
     <div class="card">
-      <h2>Experience</h2>
+      <h2>🎓 Education</h2>
+
       <div class="timeline">
-        <div>
-          <strong>Automation</strong><br>
-          Self-Projects / Freelance (or your platform name if any)
-📅 Present
 
-- Designed and developed automation workflows to reduce manual tasks and improve efficiency.
-- Built automated systems for data handling, form submission, and task scheduling using modern tools and scripting.
-- Integrated APIs and web-based tools to streamline repetitive processes and improve productivity.
-- Worked on automation concepts such as web scraping, data processing, and workflow automation.
-- Continuously exploring and implementing new automation techniques to solve real-world problems.
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <h3>BSc in Computer Science & Engineering</h3>
+            <p>Leading University</p>
+          </div>
         </div>
 
-        <div>
-          <strong>Flutter Developer</strong><br>
-          Flutter Developer
-
-Self Projects / Freelance / Internship (add your platform if any)
-📅 Present
-
-- Developed cross-platform mobile applications using Flutter & Dart for Android and iOS.
-- Built responsive and user-friendly UI following modern Material Design principles.
-- Integrated REST APIs for real-time data fetching and dynamic app functionality.
-- Implemented state management solutions such as Provider / SetState / Riverpod.
-- Worked on CRUD-based applications, authentication systems, and database integration (Firebase / local storage).
-- Debugged and optimized application performance for smooth user experience.
-- Continuously learning advanced Flutter concepts and best practices for scalable app development.
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p>GPA: 5.00 / 5.00</p>
+            <p>Bangladesh Air Force Shaheen College, Shamshernagar</p>
+          </div>
         </div>
+
       </div>
     </div>
 
+    <!-- EXPERIENCE -->
     <div class="card">
-      <h2>Research</h2>
-      <p><strong>Emotional Patterns of Students Before Exams</strong></p>
-      <p>NLP-based research analyzing student emotions.</p>
+      <h2>💼 Experience</h2>
+
+      <div class="experience-item">
+        <h3>Automation Expert</h3>
+        <p class="company">Self Projects / Freelance</p>
+        <p class="date">📅 Present</p>
+
+        <ul>
+          <li>Designed automation workflows to reduce manual tasks.</li>
+          <li>Built systems for data handling and task scheduling.</li>
+          <li>Integrated APIs for productivity improvement.</li>
+          <li>Worked on web scraping and automation tools.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Flutter Developer</h3>
+        <p class="company">Self Projects / Freelance / Internship</p>
+        <p class="date">📅 Present</p>
+
+        <ul>
+          <li>Built cross-platform apps using Flutter & Dart.</li>
+          <li>Integrated REST APIs for dynamic apps.</li>
+          <li>Implemented state management (Provider / Riverpod).</li>
+          <li>Worked with Firebase & local storage.</li>
+        </ul>
+      </div>
+
     </div>
 
+    <!-- RESEARCH -->
     <div class="card">
-      <h2>Contact</h2>
+      <h2>🔬 Research</h2>
+      <p><strong>Emotional Patterns of Students Before Exams</strong></p>
+      <p>NLP-based research analyzing student emotions and behavior patterns.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>📞 Contact</h2>
       <p>Email: sourob617@gmail.com</p>
       <p>Phone: +8801700806963</p>
     </div>
@@ -220,8 +282,9 @@ Self Projects / Freelance / Internship (add your platform if any)
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-  © 2026 Sourob Md
+  © 2026 Sourob Md | All Rights Reserved
 </div>
 
 </body>
